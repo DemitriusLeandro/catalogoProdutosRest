@@ -1,0 +1,5 @@
+package catalogo.api.erro;
+
+public class ResourceNotFoundException {
+
+}

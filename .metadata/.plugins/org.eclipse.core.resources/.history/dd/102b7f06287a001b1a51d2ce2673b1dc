@@ -1,0 +1,14 @@
+
+#Enable debug logs.
+#debug=false
+
+#Enable trace logs.
+#trace=false 
+
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/produtos?useTimezone=true&serverTimezone=America/Sao_Paulo
+spring.datasource.username=estudo
+spring.datasource.password=estudo#2008
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update

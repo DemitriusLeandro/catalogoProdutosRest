@@ -1,0 +1,10 @@
+package catalogo.api.exception;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class AppExceptionHandler {
+	
+	//https://www.youtube.com/watch?v=ac7JWdD3CZ0
+
+}

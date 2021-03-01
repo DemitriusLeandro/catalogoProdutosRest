@@ -1,0 +1,28 @@
+package catalogo.api.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import catalogo.api.model.Produtos;
+
+@Repository
+public interface ProdutosRepository extends CrudRepository<Produtos, Long> {
+
+	@Query("select p from Produtos p "
+			+ " where p.description like '%:vDescription%' or p.name like '%:vName%' "
+			+ " and p.price >= :vMaxPrice "
+			+ " and p.price <= :vMinPrice")  
+	public List<Produtos> findSearchProducts(@Param("vDescription") String vDescription, 
+			                                 @Param("vName") String vName,
+			                                 @Param("vMaxPrice") String vMaxPrice,
+			                                 @Param("vMinPrice") String vMinPrice);
+	
+	
+
+	
+	
+}

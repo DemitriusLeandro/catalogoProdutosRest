@@ -1,0 +1,5 @@
+package catalogo.api.model;
+
+public class Produtos {
+
+}

@@ -1,0 +1,17 @@
+package catalogo.api.repository;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import catalogo.api.model.Produtos;
+
+@Repository
+public interface ProdutosRepository extends CrudRepository<Produtos, Long> {
+	
+	
+	@Query("select r.description from Produtos r where r.id = :vIdProduto")
+    public Produtos getDescProdutoIdProduto(@Param("vIdProduto") Long vIdProduto);
+
+}

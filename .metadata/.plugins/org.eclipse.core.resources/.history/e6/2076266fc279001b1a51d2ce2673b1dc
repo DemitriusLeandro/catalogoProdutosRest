@@ -1,0 +1,9 @@
+package catalogo.api.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import catalogo.api.model.Produtos;
+
+public interface ProdutosRepository extends CrudRepository<Produtos, String> {
+
+}

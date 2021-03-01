@@ -1,0 +1,13 @@
+package catalogo.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CatalogodeProdutosApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CatalogodeProdutosApiApplication.class, args);
+	}
+
+}
