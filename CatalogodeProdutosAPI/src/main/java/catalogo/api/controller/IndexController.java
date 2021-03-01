@@ -60,9 +60,9 @@ public class IndexController {
 	                                                      @RequestParam(value="max_price", required =  false ) String max_price, 
                                                           @RequestParam(value="q", required =  false ) String q) {		
 		
-		if (min_price!=null && max_price !=null && q !=null ) {			
+		//if (min_price!=null && max_price !=null && q !=null ) {			
 		
-		}
+		//}
 			
 		
 		min_price = min_price.replaceAll(",", ".");			
